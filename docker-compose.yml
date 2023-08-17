@@ -1,15 +1,15 @@
 version: "1"
 services:
-  geo-location-service:
-      build: ./
-      restart: always
-      environment:
-        - PORT=8082
-        - PG_CONNECTION_STRING=postgres://psql:123456@postgres:5432/db_va
-      expose:
-        - 3000
-      ports:
-        - 8082:3000
+  # geo-location-service:
+  #     build: ./
+  #     restart: always
+  #     environment:
+  #       - PORT=8082
+  #       - PG_CONNECTION_STRING=postgres://psql:123456@postgres:5432/db_va
+  #     expose:
+  #       - 3000
+  #     ports:
+  #       - 8082:3000
         
   postgres:
     image: postgres:latest

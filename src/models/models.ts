@@ -24,7 +24,11 @@ export class Geo extends Model {
   latitude!: number;
 
   @Column(DataType.DOUBLE)
-  longtitude!: number;
+  longitude!: number;
 }
 
 export default Geo;
+
+// interface GeoCoding{
+//   geocode(): LatLng
+// }
